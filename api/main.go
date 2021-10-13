@@ -1,15 +1,16 @@
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	app := fiber.New()
+	router := gin.Default()
+	router.LoadHTMLGlob("templates/*.html")
 
-	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Hello, golang World 👋 ")
+	router.GET("/", func(ctx *gin.Context) {
+		ctx.HTML(200, "index.html", gin.H{})
 	})
 
-	app.Listen(":80")
+	router.Run()
 }
