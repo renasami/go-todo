@@ -9,7 +9,7 @@ const Button: FC<Props> = (props: Props) => {
 
     return (
         <div>
-           <a onClick={()=>{props.onclick}}>{props.text}</a>
+           <a onClick={() => {alert("fas")}}>{props.text}</a>
         </div>
     )
 

@@ -6,14 +6,18 @@ type Props = {
     content: string
 }
 
+const test = () => {
+    console.log(Math.random() * 100)
+}
+
 const Task: FC<Props> = (props: Props) => {
     return (
         <>
             <li>
                 <Text text={props.content}/>
                 <Text text={props.status}/>
-                <Button text={"編集"} onclick={()=>{console.log("fas")}}/>
-                <Button text={"削除"} onclick={()=>{console.log("fas")}}/>
+                <Button text={"編集"} onclick={test}/>
+                <Button text={"削除"} onclick={test}/>
             </li>
         </>
     )
