@@ -8,6 +8,7 @@ require (
 	github.com/creack/pty v1.1.16 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
+	github.com/gin-gonic/gin v1.7.4 // indirect
 	github.com/gofiber/fiber/v2 v2.20.1
 	github.com/klauspost/compress v1.13.6 // indirect
 	github.com/mattn/go-colorable v0.1.11 // indirect
