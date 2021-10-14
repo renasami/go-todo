@@ -15,14 +15,18 @@ const Main:FC = ()=>{
             content: "Hello02"
         }
     ]
+    const style =  {
+        display: "flex",
+        margin: "20px",
+    }
 
 
     return (
         <>
-            <div style={{width:"100%", float: "left"}}>
-                <ul>
+            <div style={{width:"100%"}}>
+                <ul style={{listStyle:"none"}}>
                     {test.map((item,index) => {
-                        return <Tasks status={item.status} content={item.content} key={index}/>
+                        return <Tasks status={item.status} style={style} content={item.content} key={index}/>
                     })}
                 </ul>
             </div>

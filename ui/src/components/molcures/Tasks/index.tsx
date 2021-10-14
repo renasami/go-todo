@@ -4,6 +4,7 @@ import Text from "../../atoms/Text"
 type Props = {
     status: string
     content: string
+    style?: object 
 }
 
 const test = () => {
@@ -17,7 +18,7 @@ const Task: FC<Props> = (props: Props) => {
     return (
         <>
             <li >
-                <div>
+                <div style={props.style}>
                     <Text text={props.content} style={style}/>
                     <Text text={props.status} style={style}/>
                     <Button text={"編集"} onclick={test} style={style}/>
