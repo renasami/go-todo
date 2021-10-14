@@ -11,13 +11,18 @@ const test = () => {
 }
 
 const Task: FC<Props> = (props: Props) => {
+    const style = {
+        margin:"auto"
+    }
     return (
         <>
-            <li>
-                <Text text={props.content}/>
-                <Text text={props.status}/>
-                <Button text={"編集"} onclick={test}/>
-                <Button text={"削除"} onclick={test}/>
+            <li >
+                <div>
+                    <Text text={props.content} style={style}/>
+                    <Text text={props.status} style={style}/>
+                    <Button text={"編集"} onclick={test} style={style}/>
+                    <Button text={"削除"} onclick={test} style={style}/>
+                </div>
             </li>
         </>
     )

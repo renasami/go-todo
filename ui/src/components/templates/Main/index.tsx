@@ -16,9 +16,10 @@ const Main:FC = ()=>{
         }
     ]
 
+
     return (
         <>
-            <div>
+            <div style={{width:"100%", float: "left"}}>
                 <ul>
                     {test.map((item,index) => {
                         return <Tasks status={item.status} content={item.content} key={index}/>
