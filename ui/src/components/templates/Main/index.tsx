@@ -1,5 +1,6 @@
-import {FC} from "react";
+import {FC, useRef} from "react";
 import Tasks from "../../molcures/Tasks"
+import InputUnit from "../../molcures/InputUnit"
 const Main:FC = ()=>{
     type TaskInfo = {
         status: string
@@ -22,7 +23,9 @@ const Main:FC = ()=>{
 
 
     return (
-        <>
+        <>      
+            <h1>Go Study TODO</h1>
+            <InputUnit/>
             <div style={{width:"100%"}}>
                 <ul style={{listStyle:"none"}}>
                     {test.map((item,index) => {

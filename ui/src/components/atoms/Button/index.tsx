@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 
 type Props = {
     text: string
-    onclick: Function
+    onclick: any
     style?: object
 }
 
@@ -11,7 +11,7 @@ const Button: FC<Props> = (props: Props) => {
 
     return (
         <>
-           <a  style={props.style} onClick={() => {alert("fas")}}>{props.text}</a>
+           <button  style={props.style} onClick={props.onclick}>{props.text}</button>
         </>
     )
 
